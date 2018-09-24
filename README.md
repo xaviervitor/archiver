@@ -1,2 +1,2 @@
 # archiver
-Um programa arquivador, ou gerenciador de "archives".
+A file archiver.
