@@ -5,7 +5,7 @@ This is a simple file archiver. A file archiver is a computer program that combi
 
 1. Simply Clone or Download the repository
 ```shell
-https://github.com/xaviervitor/archiver.git
+git clone https://github.com/xaviervitor/archiver.git
 ```
 2. Run the shell script
 ```shell
