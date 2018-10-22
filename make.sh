@@ -1,7 +1,3 @@
-# Script para compilar e executar
-
-g++ -std=c++11 archiver.cpp -o archiver 
+clear
+g++ -std=c++11 src/archiver.cpp src/main.cpp src/util.cpp -o archiver 
 ./archiver
-
-#fim de script
-
