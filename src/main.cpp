@@ -3,16 +3,6 @@
 #include <string>
 #include "archiver.h"
 
-/*void openArchive(Archive& archive, const std::string name) {
-    archive = new Archive(name);
-    std::cout << "\"" << name << "\" opened." << std::endl;
-}
-
-void closeArchive(Archive& archive) { 
-    archive->name = ;
-    std::cout << "\"" << archive->name << "\" closed." << std::endl;
-}*/
-
 int main(int argc, char **argv) {
     Archive* archive;
     int option;
@@ -27,13 +17,13 @@ int main(int argc, char **argv) {
         std::cout << "0. Leave" << std::endl;
         std::cin >> option;
         if (option == 1)  { // Open
-        /*    std::string archiveName;
+            std::string archiveName;
             std::cout << "Name of the archive:" << std::endl;
             std::cin >> archiveName;
             //test if this is actually an archive
-            openArchive(archive, archiveName);*/
+            archive = new Archive(archiveName);
         } else if (option == 2) { // Close
-            /*closeArchive(archive);*/
+            archive = new Archive("");
         } else if (option == 3) { // Create 
             std::vector<std::string> filenames;
             std::string userInput;
