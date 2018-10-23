@@ -8,10 +8,6 @@
 #include "util.h"
 #include "index.h"
 
-Archive::Archive(std::string name) {
-    this->name = name;
-};
-
 void Archive::make(std::vector<std::string> filenames) {
     std::ofstream archive(this->name); 
     // Write index table header to archive
@@ -25,7 +21,7 @@ void Archive::make(std::vector<std::string> filenames) {
         archive << std::endl;
     }
     // Write files to archive
-    {    
+    {
         for (std::string filename : filenames) {
             std::ifstream file(filename, std::ios::binary); // Opens the file with the cursor in its end (std::ios::ate).
             char buffer;

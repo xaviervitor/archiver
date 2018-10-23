@@ -8,8 +8,11 @@ private:
     std::string name;
     std::vector<Index> getIndexTable();
 public: 
-    Archive();
-    Archive(std::string name);
+    Archive(std::string name) 
+        : name(name)
+    {
+    }
+
     void make(std::vector<std::string> filenames);
     void listFiles();
     void extractFile(std::string filename, std::string newFilename); 
